@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <title>L'Alpiniste</title>
+        <meta charset="utf-8" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/griddles-mq.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div id="latest-tweet"></div>
+
+    <div class="content-wrapper grid gutter">
+        <section class="main g-3/4 m-g-100" role="main">
+            <header>
+                <a class="title" href="http://blog.projectfondue.com:9901">L'Alpiniste</a>
+                <p><strong>The blog of the Project Fondue Team</strong></p>
+            </header><!-- /#banner -->
+
+            <nav id="menu">
+                <ul>
+                    
+            
+                
+            
+                </ul>
+            </nav><!-- /#menu -->
+
+            
+    <header>
+        <h1 class="entry-title"><a href="" rel="bookmark" title="Permalink to Raclette: Web App Utils for Python">Raclette: Web App Utils for Python</a></h1>
+    </header>
+    <div class="post-info">
+        <abbr class="published" title="2009-07-14T10:58:00">
+                Tue 14 July 2009
+        </abbr>
+        
+        <p class="vcard author">
+            By <a class="url fn" href="/author/Project Fondue Team">Project Fondue Team</a>
+        </p>
+        
+    </div><!-- /.post-info -->
+    <div class="entry-content">
+    <p>Something I've been working on for a while is consolidating the set of utilities that are used on our Python based sites. To start with this code was just a set of basic libraries that we've used alongside web.py.</p>
+<p>It quickly became clear that this was something that could have more of a life of it's own. We've been finding WSGI to be a great thing for web application development because having a clear specification means that building apps and middlewares are far likely to be uttilsed because it doesn't matter which Python framework you use, whether it's a lightweight framework, Django, Pylons.</p>
+<p>The goals for Raclette are to provide well tested middlewares and libraries that can be used to facilitate web development. We're also looking to keep the quality of code at a high standard as much as possible whilst balancing that with getting code out there so developers can try it out and provide feedback.</p>
+<div class="section" id="raclette-gbs-graded-browser-support-middleware">
+<h2>raclette.gbs: Graded Browser Support Middleware</h2>
+<p>The first app off the blocks is a WSGI middleware which provides a solution to implementing Yahoo's Graded Browser support strategy see <a class="reference external" href="http://developer.yahoo.com/yui/articles/gbs/">http://developer.yahoo.com/yui/articles/gbs/</a> for more information.</p>
+<div class="section" id="installation">
+<h3>Installation</h3>
+<div class="highlight"><pre>sudo easy_install raclette.gbs
+</pre></div>
+<p>To use the middleware simply wrap the init of the middleware around your WSGI application</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">raclette.gbs</span> <span class="kn">import</span> <span class="n">GradedBrowser</span>
+<span class="o">...</span>
+<span class="n">application</span> <span class="o">=</span> <span class="n">GradedBrowser</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+</pre></div>
+<p>raclette.gbs works by analyzing the user-agent string and returning a grade stating that the browser is C, A or X grade. Yahoo's own strategy only provides details of which browser's are A grade so the C grade matrix is pretty much created based on guess-work around the notion that C-Grade browsers should be Antiquated and rare.</p>
+<p>Ultimately for the purposes of this middleware only C-grade browsers really need to be identified as A and X grade are generally treated the same. However to be able to give the end user more scope to do different things with browser grades in development or production C and A grades are explicitly identified. It's up to the user to modify the browser matrix should they wish to add or drop support for any particular browser.</p>
+</div>
+<div class="section" id="known-issues">
+<h3>Known Issues</h3>
+<p>There's clearly some work to be done in terms of extending the data used to provide the decisions on which browsers are and aren't supported. With that in mind we're happy to get feedback on which browsers you think need to be indentified. Clearly it doesn't have to be something that's in Yahoo's matrix of support as it's clear that anyone using this may wish to define their own matrix of support.</p>
+<p>Caching is not currently implemented. As the UA string is parsed on every request it's fairly crucial that caching is added - expect several caching solutions to be made available in subsequent releases.</p>
+</div>
+<div class="section" id="future-possibilities">
+<h3>Future Possibilities</h3>
+<p>Something that came up early on was an idea around extending support to include some notion of graded mobile browser support in the sense that you might have MA, MX and MC. At this point it's not clear if having any separate grades for mobile devices is a good thing or not, but certainly being able to detect common mobile browsers would be useful.</p>
+</div>
+<div class="section" id="getting-the-code">
+<h3>Getting the code</h3>
+<p>The code is available on launchpad.net at <a class="reference external" href="https://launchpad.net/raclette.gbs">https://launchpad.net/raclette.gbs</a> -- Contributions and patches gratefully received. All code is licensed under the modified BSD license.</p>
+</div>
+</div>
+
+    </div><!-- /.entry-content -->
+    <div id="disqus_thread"></div>
+
+        </section>
+
+        
+        <aside class="sidebar g-1/4 m-g-100">
+            <h3><span>Feed your head</span></h3>
+            <ul>
+                <li><a href="http://twitter.com/projectfondue">Follow us on Twitter</a></li>
+            </ul>
+
+            <h3><span>Latest Posts</span></h3>
+            <ul>
+                
+                <li><a href="/archives/2011/06/06/the-web-column-issue-no5">The Web Column: Issue No.5</a></li>
+                
+                <li><a href="/archives/2011/02/09/the-web-column-issue-no4">The Web Column: Issue No.4</a></li>
+                
+                <li><a href="/archives/2011/02/08/contribute-to-the-web-column">Contribute to the Web Column</a></li>
+                
+                <li><a href="/archives/2011/01/18/the-web-column-issue-no3">The Web Column: Issue No.3</a></li>
+                
+                <li><a href="/archives/2011/01/14/the-web-column-issue-no2">The Web Column: Issue No.2</a></li>
+                
+            </ul>
+
+            
+
+            <h3><span>Tags</span></h3>
+            <ul class="tags">
+                
+                    <li class="tag-10"><a href="/tag/performance/">performance</a></li>
+                
+                    <li class="tag-10"><a href="/tag/accessibility/">accessibility</a></li>
+                
+                    <li class="tag-10"><a href="/tag/cron/">cron</a></li>
+                
+                    <li class="tag-1"><a href="/tag/web-column/">web-column</a></li>
+                
+                    <li class="tag-10"><a href="/tag/browsers/">browsers</a></li>
+                
+                    <li class="tag-10"><a href="/tag/scaling/">scaling</a></li>
+                
+                    <li class="tag-10"><a href="/tag/linux/">linux</a></li>
+                
+                    <li class="tag-10"><a href="/tag/restructuredtext/">restructuredtext</a></li>
+                
+                    <li class="tag-10"><a href="/tag/haproxy/">haproxy</a></li>
+                
+                    <li class="tag-2"><a href="/tag/python/">python</a></li>
+                
+                    <li class="tag-10"><a href="/tag/glusterfs/">glusterfs</a></li>
+                
+                    <li class="tag-10"><a href="/tag/css/">css</a></li>
+                
+                    <li class="tag-3"><a href="/tag/apache/">apache</a></li>
+                
+                    <li class="tag-6"><a href="/tag/wsgi/">wsgi</a></li>
+                
+                    <li class="tag-6"><a href="/tag/mod_wsgi/">mod_wsgi</a></li>
+                
+                    <li class="tag-10"><a href="/tag/nginx/">nginx</a></li>
+                
+                    <li class="tag-10"><a href="/tag/google/">google</a></li>
+                
+                    <li class="tag-10"><a href="/tag/announcements/">announcements</a></li>
+                
+                    <li class="tag-10"><a href="/tag/loggerhead/">loggerhead</a></li>
+                
+                    <li class="tag-10"><a href="/tag/devops/">devops</a></li>
+                
+            </ul>
+
+            <h3><span>More Fondue</span></h3>
+            <ul>
+                <li><a href="http://spritegen.website-performance.org">CSS Sprite Generator</a></li>
+                <li><a href="http://favicon-generator.org">Favicon Generator</a></li>
+                <li><a href="http://permissions-calculator.org">Unix Permissions Calculator</a></li>
+            </ul>
+
+
+        </aside>
+        
+    </div>
+
+    <footer id="contentinfo" class="body" role="contentinfo">
+        <p class="powered">Proudly powered by <a href="http://docs.notmyidea.org/alexis/pelican/">pelican</a></p>
+        <p class="copyright">&copy; Copyright 2008-2012 by <a href="http://projectfondue.com/">Project Fondue</a>.</p>
+    </footer><!-- /#contentinfo -->
+
+    
+
+<script type="text/javascript">
+    var disqus_shortname = 'projectfondue';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+    <script src="/theme/js/lscache.js"></script>
+    <script src="/theme/js/latest-tweet.js"></script>
+</body>
+</html>

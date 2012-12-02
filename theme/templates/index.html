@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main_heading %}<h1 class="title">{{ SITENAME }}</h1>{% endblock %}
+
+{% block content %}
+
+    {% block content_title %}
+    <h2>All articles</h2>
+    {% endblock %}
+
+    <ol id="post-list" class="article-list">
+    {% for article in articles_page.object_list %}
+        <li>
+            <article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h2> </header>
+                <div class="post-info">
+                    <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+                        {% if article.author %}<address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a></address>{% endif %}
+                </div><!-- /.post-info -->
+                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+            </article>
+        </li>
+    {% endfor %}
+    </ol><!-- /#posts-list -->
+
+    <p class="paginator">
+        {% if articles_page.has_previous() %}
+            {% if articles_page.previous_page_number() == 1 %}
+                <a href="{{ SITEURL }}/{{ page_name }}">&laquo;</a>
+            {% else %}
+                <a href="{{ SITEURL }}/{{ page_name }}/{{ articles_page.previous_page_number() }}">&laquo;</a>
+            {% endif %}
+        {% endif %}
+        Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
+        {% if articles_page.has_next() %}
+            <a href="{{ SITEURL }}/{{ page_name }}/{{ articles_page.next_page_number() }}">&raquo;</a>
+        {% endif %}
+    </p>
+
+{% endblock content %}

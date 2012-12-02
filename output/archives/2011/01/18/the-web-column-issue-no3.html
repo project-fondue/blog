@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <title>L'Alpiniste</title>
+        <meta charset="utf-8" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/griddles-mq.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div id="latest-tweet"></div>
+
+    <div class="content-wrapper grid gutter">
+        <section class="main g-3/4 m-g-100" role="main">
+            <header>
+                <a class="title" href="http://blog.projectfondue.com:9901">L'Alpiniste</a>
+                <p><strong>The blog of the Project Fondue Team</strong></p>
+            </header><!-- /#banner -->
+
+            <nav id="menu">
+                <ul>
+                    
+            
+                
+            
+                </ul>
+            </nav><!-- /#menu -->
+
+            
+    <header>
+        <h1 class="entry-title"><a href="" rel="bookmark" title="Permalink to The Web Column: Issue No.3">The Web Column: Issue No.3</a></h1>
+    </header>
+    <div class="post-info">
+        <abbr class="published" title="2011-01-18T10:10:00">
+                Tue 18 January 2011
+        </abbr>
+        
+        <p class="vcard author">
+            By <a class="url fn" href="/author/Project Fondue Team">Project Fondue Team</a>
+        </p>
+        
+    </div><!-- /.post-info -->
+    <div class="entry-content">
+    <p>Welcome to the third issue of our &quot;Web Column&quot; series. We trust you've had a relaxing Christmas break and are already enjoying the start of 2011. We've had a little bit of a spring clean around here and have carried out a little &quot;refresh&quot; of this site to make things a bit easier to read and provide more of a sense of space.  We hope you like it.</p>
+<div class="contents rc topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#recent-news" id="id5">Recent news</a><ul>
+<li><a class="reference internal" href="#google-drops-native-support-for-h-264-from-chrome" id="id6">Google Drops Native support for H.264 from Chrome</a></li>
+<li><a class="reference internal" href="#puppet-cookbook-launched" id="id7">Puppet Cookbook Launched</a></li>
+<li><a class="reference internal" href="#why-developers-should-care-about-system-packages" id="id8">Why developers should care about system packages</a></li>
+<li><a class="reference internal" href="#how-facebook-ships-code" id="id9">How Facebook Ships Code</a></li>
+<li><a class="reference internal" href="#bazaar-pipeline-plugin-demo" id="id10">Bazaar Pipeline Plugin Demo</a></li>
+<li><a class="reference internal" href="#google-app-engine-s-new-high-replication-datastore" id="id11">Google App Engine's new High Replication Datastore</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#front-end" id="id12">Front-End</a><ul>
+<li><a class="reference internal" href="#novnc" id="id13">NoVNC</a></li>
+<li><a class="reference internal" href="#modernizr-2-0-beta-preview" id="id14">Modernizr 2.0 Beta Preview</a></li>
+<li><a class="reference internal" href="#game-development-and-javascript" id="id15">Game development and Javascript</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#framework-activity" id="id16">Framework activity</a><ul>
+<li><a class="reference internal" href="#symphony-2" id="id17">Symphony 2</a></li>
+<li><a class="reference internal" href="#djangocon-europe-2011" id="id18">DjangoCon Europe 2011</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-python-corner" id="id19">The Python corner</a><ul>
+<li><a class="reference internal" href="#ned-batchelder-faked-translations-poxx-py" id="id20">Ned Batchelder: Faked translations: poxx.py</a></li>
+<li><a class="reference internal" href="#pyro" id="id21">Pyro</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#focus-on-wtforms" id="id22">Focus on: WTForms</a><ul>
+<li><a class="reference internal" href="#getting-data-into-the-form" id="id23">Getting Data into the form</a></li>
+<li><a class="reference internal" href="#updating-db-objects-with-validated-data" id="id24">Updating DB objects with validated data</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="recent-news">
+<h2><a class="toc-backref" href="#id5">Recent news</a></h2>
+<div class="section" id="google-drops-native-support-for-h-264-from-chrome">
+<h3><a class="toc-backref" href="#id6">Google Drops Native support for H.264 from Chrome</a></h3>
+<p>There's been a strong reaction to the news that Google is dropping native support for the H.264 codec within Google Chrome in order to push forward their own open-source <a class="reference external" href="http://www.webmproject.org/">WebM</a> codec. There's plenty of polarised opinons, and that's not suprising with Apple and Microsoft in one corner and Opera, Mozilla and Google in the other (<a class="reference external" href="http://www.flickr.com/photos/24374884&#64;N08/5349656086/">see this chart from Bruce Lawson</a>).</p>
+<ul class="simple">
+<li>daringfireball.net - <a class="reference external" href="http://daringfireball.net/linked/2011/01/11/h264-chrome">Google Dropping Support for H.264 in Chrome</a></li>
+<li>wired.com - <a class="reference external" href="http://www.wired.com/epicenter/2011/01/google-reveals-plan-to-remove-h-264-support-from-chrome/">Google Reveals Plan To Remove H.264 Support From Chrome</a></li>
+</ul>
+</div>
+<div class="section" id="puppet-cookbook-launched">
+<h3><a class="toc-backref" href="#id7">Puppet Cookbook Launched</a></h3>
+<p>Former colleague <a class="reference external" href="http://www.unixdaemon.net/">Dean Wilson</a> has been hard at work over the break putting together the <a class="reference external" href="http://www.puppetcookbook.com/">Puppet Cookbook</a> - It's full of sound tips and definitely a resource worth keeping tabs on if you're using Puppet for configuration management.</p>
+</div>
+<div class="section" id="why-developers-should-care-about-system-packages">
+<h3><a class="toc-backref" href="#id8">Why developers should care about system packages</a></h3>
+<p>In <a class="reference external" href="http://morethanseven.net/2011/01/16/Why-developers-should-care-about-system-packages.html">Why developers should care about system packages</a> Gareth Rushgrove details why system packages are important and why packaging skills are important for developers to learn. He also mentions Launchpad's excellent PPA feature, which is something we use quite a bit here at Project Fondue for backporting newer package versions. Back-porting a newer version of a package is something that PPA's are really handy for. Particularly as with a lot of packages this is often a relatively simple task.</p>
+</div>
+<div class="section" id="how-facebook-ships-code">
+<h3><a class="toc-backref" href="#id9">How Facebook Ships Code</a></h3>
+<p>Whether you like the site's purpose or not, there is no denying that Facebook is a high traffic, technically challenging site. <a class="reference external" href="http://framethink.wordpress.com/2011/01/17/how-facebook-ships-code/">These rumors</a> on how Facebook handles development and deployment are of course to take with a grain of salt, but can provide a little insight into how different a company Facebook might be, should you care.</p>
+</div>
+<div class="section" id="bazaar-pipeline-plugin-demo">
+<h3><a class="toc-backref" href="#id10">Bazaar Pipeline Plugin Demo</a></h3>
+<p><a class="reference external" href="http://bazaarvcs.wordpress.com/2011/01/16/bzr-pipelines-demo-video/">Bazaar Pipeline Plugin Demo</a> provides a run-through of what can be achieved with the <a class="reference external" href="http://wiki.bazaar.canonical.com/BzrPipeline">bzr-pipeline plugin</a>. Which looks potentially very useful for breaking up large projects in to smaller bite-sized, reviewable chunks.</p>
+</div>
+<div class="section" id="google-app-engine-s-new-high-replication-datastore">
+<h3><a class="toc-backref" href="#id11">Google App Engine's new High Replication Datastore</a></h3>
+<p><a class="reference external" href="http://googleappengine.blogspot.com/2011/01/announcing-high-replication-datastore.html">Google has announced that it will now support a second datastore for App Engine</a> as a remedy to availability problems encountered with the regular Master/Slave datastore. There are a few caveats though:</p>
+<ul class="simple">
+<li>an application has to take particular precautions when using this new High Replication datastore, particularly regarding write latency, which can be much higher than before. Therefore data consistency is not guaranteed as much as it was with the Master/Slave datastore.</li>
+<li>the new duplicates data across many data centers, which means more bandwidth used by Google, which in turn means the pricing of this new datastore is significantly higher than its little brother's. Google is starting with a three times more expensive scheme and will re-evaluate the price in June.</li>
+</ul>
+<p>Despite its drawbacks, the new datastore seems like a pretty robust offer.
+If you value Google App Engine as your hosting platform of choice and should avoid downtimes at all cost, this might just be the solution you were waiting for.</p>
+</div>
+</div>
+<div class="section" id="front-end">
+<h2><a class="toc-backref" href="#id12">Front-End</a></h2>
+<div class="section" id="novnc">
+<h3><a class="toc-backref" href="#id13">NoVNC</a></h3>
+<p><a class="reference external" href="http://kanaka.github.com/noVNC/screenshots.html">NoVNC</a> - An exciting project which provides VNC with HTML5, websockets and canvas. via <a class="reference external" href="http://twitter.com/sil">&#64;sil</a></p>
+</div>
+<div class="section" id="modernizr-2-0-beta-preview">
+<h3><a class="toc-backref" href="#id14">Modernizr 2.0 Beta Preview</a></h3>
+<p>Faruk Ate? and Paul Irish have joined forces with Alex Sexton to put out <a class="reference external" href="http://modernizr.github.com/Modernizr/2.0-beta/">a 2.0 version of Modernizr</a>, their feature detection Javascript library, which &quot;allows you to target specific browser functionality in your stylesheet&quot;. This is a very handy tool when using a progressive enhancement approach, which you already do, of course...</p>
+</div>
+<div class="section" id="game-development-and-javascript">
+<h3><a class="toc-backref" href="#id15">Game development and Javascript</a></h3>
+<p>A <a class="reference external" href="http://www.reddit.com/r/javascript/comments/f094j/list_of_js_game_engines_community_effort/">very long list of game development resources in Javascript</a> was compiled on Reddit. You can find there a plethora of graphics and audio engines to play with. With WebGL being implemented across most modern web browsers at the moment, game development will soon become a new avenue for your leet JS skillz :)</p>
+</div>
+</div>
+<div class="section" id="framework-activity">
+<h2><a class="toc-backref" href="#id16">Framework activity</a></h2>
+<div class="section" id="symphony-2">
+<h3><a class="toc-backref" href="#id17">Symphony 2</a></h3>
+<p>Work on Symphony 2 <a class="reference external" href="http://www.symfony-project.org/blog/2011/01/16/a-week-of-symfony-211-10-16-january-2011">is continuing with recent refactoring (and more)</a> and <a class="reference external" href="http://www.symfony-project.org/blog/2011/01/17/symfony2-pr5-released">a PR5 release</a> which Fabien Potencier said is more or less the equivalent to a beta release. A release candidate is planned soon.</p>
+</div>
+<div class="section" id="djangocon-europe-2011">
+<h3><a class="toc-backref" href="#id18">DjangoCon Europe 2011</a></h3>
+<p><a class="reference external" href="http://www.djangoproject.com/weblog/2011/jan/14/djangocon-eu-2011-announced/">DjangoCon Europe 2011 was recently announced</a> and will take place in June in Amsterdam, in the old port district (a pretty cool and different area). All the relevant info can be found <a class="reference external" href="http://www.djangocon.eu">at the official site</a>.</p>
+</div>
+</div>
+<div class="section" id="the-python-corner">
+<h2><a class="toc-backref" href="#id19">The Python corner</a></h2>
+<p>Python rocks. At Project Fondue, we love it and so we keep a close eye on what's happening in the Python realms. Here is an excerpt.</p>
+<div class="section" id="ned-batchelder-faked-translations-poxx-py">
+<h3><a class="toc-backref" href="#id20">Ned Batchelder: Faked translations: poxx.py</a></h3>
+<p><a class="reference external" href="http://nedbatchelder.com/blog/201012/faked_translations_poxxpy.html">poxx.py</a>: A Nice utility for testing out gettext translations.</p>
+</div>
+<div class="section" id="pyro">
+<h3><a class="toc-backref" href="#id21">Pyro</a></h3>
+<p><a class="reference external" href="http://www.razorvine.net/python/Pyro">Pyro</a> stands for Python Remote Object library and does exactly that: let you call Python code running on other machines. The API is very simple and a new version, Pyro 4, is being written from scratch at the moment. RPC can be a tedious task, so there is no doubt this could come as a handy tool to quite a few people.</p>
+</div>
+</div>
+<div class="section" id="focus-on-wtforms">
+<h2><a class="toc-backref" href="#id22">Focus on: WTForms</a></h2>
+<p><a class="reference external" href="http://wtforms.simplecodes.com">WTForms</a>, by Thomas Johansson and James Crasta, is a forms library which is in appearance very close to Django's forms library, but is framework-agnostic.</p>
+<p>WTForms is a great choice if you are using a lighter-weight framework with a standalone ORM. It integrates with result objects in a very elegant way.</p>
+<p>Here's an example of a form taken straight from the docs. This is fairly similar to Django forms on the whole. As the forms are just python classes you can subclass forms quickly and easily to add an extra field if you need to.</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">wtforms</span> <span class="kn">import</span> <span class="n">Form</span><span class="p">,</span> <span class="n">BooleanField</span><span class="p">,</span> <span class="n">TextField</span><span class="p">,</span> <span class="n">validators</span>
+
+<span class="k">class</span> <span class="nc">ProfileForm</span><span class="p">(</span><span class="n">Form</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;User profile.&quot;&quot;&quot;</span>
+    <span class="n">birthday</span>  <span class="o">=</span> <span class="n">DateTimeField</span><span class="p">(</span><span class="s">&#39;Your Birthday&#39;</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">&#39;%m/</span><span class="si">%d</span><span class="s">/%y&#39;</span><span class="p">)</span>
+    <span class="n">signature</span> <span class="o">=</span> <span class="n">TextAreaField</span><span class="p">(</span><span class="s">&#39;Forum Signature&#39;</span><span class="p">)</span>
+</pre></div>
+<div class="section" id="getting-data-into-the-form">
+<h3><a class="toc-backref" href="#id23">Getting Data into the form</a></h3>
+<p>The really nice feature is how you can easily use both formdata and an object to update your form.</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">edit_profile</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">current_user</span>
+    <span class="n">form</span> <span class="o">=</span> <span class="n">ProfileForm</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">POST</span><span class="p">,</span> <span class="n">user</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s">&#39;POST&#39;</span> <span class="ow">and</span> <span class="n">form</span><span class="o">.</span><span class="n">validate</span><span class="p">():</span>
+        <span class="n">form</span><span class="o">.</span><span class="n">populate_obj</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+        <span class="n">user</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+        <span class="n">redirect</span><span class="p">(</span><span class="s">&#39;edit_profile&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">render_response</span><span class="p">(</span><span class="s">&#39;edit_profile.html&#39;</span><span class="p">,</span> <span class="n">form</span><span class="o">=</span><span class="n">form</span><span class="p">)</span>
+</pre></div>
+<p>There's two things to note here. See the form instance is created by passing in the POST and the user object. Forms get data using the following precdences:</p>
+<ol class="arabic simple">
+<li>Form Data - form data has the highest priority</li>
+<li>Data Object - the data object is the next in line. Usually an object returned by your ORM - e.g. Storm, SQLAlchemy</li>
+<li>Kwargs - kwargs take the lowest priority.</li>
+</ol>
+<p>So anything that's not present in the form data (e.g POST) is filled in by the data in the user object in our example above.</p>
+<p>This means it's possible to make create/read/update and delete forms (CRUD) in an arbitrary way.</p>
+</div>
+<div class="section" id="updating-db-objects-with-validated-data">
+<h3><a class="toc-backref" href="#id24">Updating DB objects with validated data</a></h3>
+<p>To update the db object <tt class="docutils literal">form.populate_obj(obj)</tt> is used. This simply updates <tt class="docutils literal">obj</tt> with the validated data based on matching it up to the object attrs. It's very neat and easy to use. With a bit of thought it's possible to use your favorite simple framework + your preferred ORM + WTForms and create a nice set of re-usable CRUD forms.</p>
+</div>
+</div>
+
+    </div><!-- /.entry-content -->
+    <div id="disqus_thread"></div>
+
+        </section>
+
+        
+        <aside class="sidebar g-1/4 m-g-100">
+            <h3><span>Feed your head</span></h3>
+            <ul>
+                <li><a href="http://twitter.com/projectfondue">Follow us on Twitter</a></li>
+            </ul>
+
+            <h3><span>Latest Posts</span></h3>
+            <ul>
+                
+                <li><a href="/archives/2011/06/06/the-web-column-issue-no5">The Web Column: Issue No.5</a></li>
+                
+                <li><a href="/archives/2011/02/09/the-web-column-issue-no4">The Web Column: Issue No.4</a></li>
+                
+                <li><a href="/archives/2011/02/08/contribute-to-the-web-column">Contribute to the Web Column</a></li>
+                
+                <li><a href="/archives/2011/01/18/the-web-column-issue-no3">The Web Column: Issue No.3</a></li>
+                
+                <li><a href="/archives/2011/01/14/the-web-column-issue-no2">The Web Column: Issue No.2</a></li>
+                
+            </ul>
+
+            
+
+            <h3><span>Tags</span></h3>
+            <ul class="tags">
+                
+                    <li class="tag-10"><a href="/tag/performance/">performance</a></li>
+                
+                    <li class="tag-10"><a href="/tag/accessibility/">accessibility</a></li>
+                
+                    <li class="tag-10"><a href="/tag/cron/">cron</a></li>
+                
+                    <li class="tag-1"><a href="/tag/web-column/">web-column</a></li>
+                
+                    <li class="tag-10"><a href="/tag/browsers/">browsers</a></li>
+                
+                    <li class="tag-10"><a href="/tag/scaling/">scaling</a></li>
+                
+                    <li class="tag-10"><a href="/tag/linux/">linux</a></li>
+                
+                    <li class="tag-10"><a href="/tag/restructuredtext/">restructuredtext</a></li>
+                
+                    <li class="tag-10"><a href="/tag/haproxy/">haproxy</a></li>
+                
+                    <li class="tag-2"><a href="/tag/python/">python</a></li>
+                
+                    <li class="tag-10"><a href="/tag/glusterfs/">glusterfs</a></li>
+                
+                    <li class="tag-10"><a href="/tag/css/">css</a></li>
+                
+                    <li class="tag-3"><a href="/tag/apache/">apache</a></li>
+                
+                    <li class="tag-6"><a href="/tag/wsgi/">wsgi</a></li>
+                
+                    <li class="tag-6"><a href="/tag/mod_wsgi/">mod_wsgi</a></li>
+                
+                    <li class="tag-10"><a href="/tag/nginx/">nginx</a></li>
+                
+                    <li class="tag-10"><a href="/tag/google/">google</a></li>
+                
+                    <li class="tag-10"><a href="/tag/announcements/">announcements</a></li>
+                
+                    <li class="tag-10"><a href="/tag/loggerhead/">loggerhead</a></li>
+                
+                    <li class="tag-10"><a href="/tag/devops/">devops</a></li>
+                
+            </ul>
+
+            <h3><span>More Fondue</span></h3>
+            <ul>
+                <li><a href="http://spritegen.website-performance.org">CSS Sprite Generator</a></li>
+                <li><a href="http://favicon-generator.org">Favicon Generator</a></li>
+                <li><a href="http://permissions-calculator.org">Unix Permissions Calculator</a></li>
+            </ul>
+
+
+        </aside>
+        
+    </div>
+
+    <footer id="contentinfo" class="body" role="contentinfo">
+        <p class="powered">Proudly powered by <a href="http://docs.notmyidea.org/alexis/pelican/">pelican</a></p>
+        <p class="copyright">&copy; Copyright 2008-2012 by <a href="http://projectfondue.com/">Project Fondue</a>.</p>
+    </footer><!-- /#contentinfo -->
+
+    
+
+<script type="text/javascript">
+    var disqus_shortname = 'projectfondue';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+    <script src="/theme/js/lscache.js"></script>
+    <script src="/theme/js/latest-tweet.js"></script>
+</body>
+</html>

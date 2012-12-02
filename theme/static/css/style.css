@@ -1,0 +1,244 @@
+body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'FreeSans', 'Arial', sans-serif;
+    background: #fff url(http://pf.staticfil.es/hp/img/bck.png);
+    color: #333;
+    font-size: 14px;
+}
+.banner {
+    background: url(http://pf.staticfil.es/com/img/header-mountains.001.png) repeat-x 1px top;
+    height: 170px;
+}
+#latest-tweet {
+    background: #ccc;
+    height: 1.75em;
+}
+.tweet {
+    margin: 0 auto;
+    padding-left: 10px;
+    line-height: 1.75em;
+    max-width: 68.571428571em;
+}
+.shadow-txt,
+a:link.shadow-txt,
+a:visited.shadow-txt,
+a:hover.shadow-txt,
+a:active.shadow-txt {
+    color: #333;
+    text-shadow:0 1px 0 #fff;
+    text-decoration: none;
+}
+/* Grid overrides */
+.grid.gutter{
+    margin:inherit -10px
+}
+.gutter>[class*="g-"]{
+    padding:0 10px
+}
+
+a, a:link { color: #004173; }
+a:visited { color: #8D919D; }
+a:hover, a:focus { color: #668BFF; }
+a:active { color: #11172B; }
+
+.title,
+.title:focus,
+.title:link,
+.title:visited,
+.title:hover,
+.title:active {
+    font-family: 'Fugaz One', 'Helvetica Neue', 'Helvetica', 'FreeSans', 'Arial', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 500px) {
+    .title,
+    .title:focus,
+    .title:link,
+    .title:visited,
+    .title:hover,
+    .title:active {
+        font-size: 78px;
+    }
+}
+@media screen and (min-width: 720px) {
+    .grid.gutter .main {
+        padding-right: 20px;
+    }
+}
+.main h1:first-child {
+    margin-top: 0;
+}
+
+abbr.published {
+    font-style: italic;
+    border: 0;
+}
+.vcard a{
+    text-decoration: none;
+}
+
+.content-wrapper {
+    max-width: 68.571428571em;
+    margin: 0 auto;
+}
+
+
+h1 a:link, h1 a:visited,
+h2 a:link, h2 a:visited,
+h3 a:link, h3 a:visited,
+h4 a:link, h4 a:visited,
+h5 a:link, h5 a:visited,
+h6 a:link, h6 a:visited {
+    text-decoration: none;
+    color: #004173;
+}
+
+.article-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+/* sidebar */
+.sidebar {
+    font-size: 13px;
+}
+.sidebar ul {
+    padding: 0;
+    margin-top: 0;
+}
+.sidebar h3{
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid #eee;
+}
+.sidebar h3 span{
+    background-color: #eee;
+    padding: 5px;
+    display: inline-block;
+}
+.sidebar li{
+    color : #666;
+    line-height: 1.3em;
+    padding: 7px 5px;
+    list-style-type: none;
+    margin-left: 0;
+    border-bottom: 1px solid #eee;
+}
+.sidebar li a{
+    color: #333;
+    text-decoration: none;
+}
+.sidebar li a:hover{
+    text-decoration: underline;
+}
+/* table of contents */
+.rc {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+.rc .topic-title {
+    background: #ccc;
+    padding: 5px 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-shadow:0 1px 0 #fff
+}
+.rc .topic-title:after {
+    content: ":";
+}
+.contents li{
+    font-size: 100%;
+}
+.contents p{
+    margin-top: 0;
+}
+.contents ul li{
+    color: #999;
+    padding: 5px 0;
+}
+.classifier {
+    font-family: sans-serif ;
+    font-style: oblique;
+}
+.option {
+    white-space: nowrap;
+}
+.pre {
+    white-space: pre;
+}
+.problematic {
+    color: red;
+}
+/* Tags */
+.tag-1 { font-size: 170%; font-weight: 100; }
+.tag-2 { font-size: 160%; font-weight: 200; }
+.tag-3 { font-size: 150%; font-weight: 300; }
+.tag-4 { font-size: 140%; font-weight: 400; }
+.tag-5 { font-size: 130%; font-weight: 500; }
+.tag-6 { font-size: 130%; font-weight: 600; }
+.tag-7 { font-size: 110%; font-weight: 700; }
+.tag-8 { font-size: 100%; font-weight: 800; }
+.tag-9 { font-size: 90%; font-weight: 900; }
+.tag-10 { font-size: 80%; font-weight: 1000; }
+
+.tags span.info {
+    position: absolute;
+    left: -999em;
+}
+.tags {
+    margin-left: 0;
+    text-align: center;
+   /*overflow: hidden;*/
+}
+.tags li{
+    list-style-type: none;
+    border: none;
+    display: inline-block;
+    margin-left: 0;
+    padding: 0 5px;
+}
+.tags li a {
+    padding: 0;
+    display: inline;
+}
+footer {
+    background: #12172A;
+    padding: 0 10px;
+    overflow: hidden;
+    color: #fff;
+    border-top: 5px solid #ccc;
+    margin-top: 20px;
+}
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover,
+footer a:active {
+    text-decoration: underline;
+}
+
+footer .powered {
+    float: left;
+}
+footer .copyright {
+    float: right;
+}

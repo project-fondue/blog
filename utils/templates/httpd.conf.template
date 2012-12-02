@@ -1,0 +1,24 @@
+# Include module configuration:
+Include /etc/apache2/mods-enabled/*.load
+Include /etc/apache2/mods-enabled/*.conf
+
+
+ServerName 127.0.0.1
+Listen 0.0.0.0:%(port)s
+PidFile %(pidfile)s
+ErrorLog %(error_log)s
+
+DocumentRoot %(content_path)s
+
+<Location />
+     DirectoryIndex index.html
+     Options Indexes FollowSymLinks MultiViews
+     Order allow,deny
+     allow from all
+</Location>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^(.*).html$ $1 [L,R=301]
+    RewriteRule ^(.+)/$ $1 [L]
+</IfModule>

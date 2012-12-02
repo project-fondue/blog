@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+        <title>L'Alpiniste</title>
+        <meta charset="utf-8" />
+        
+        <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/theme/css/normalize.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/griddles-mq.css" type="text/css" />
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="banner"></div>
+    <div id="latest-tweet"></div>
+
+    <div class="content-wrapper grid gutter">
+        <section class="main g-3/4 m-g-100" role="main">
+            <header>
+                <a class="title" href="http://blog.projectfondue.com:9901">L'Alpiniste</a>
+                <p><strong>The blog of the Project Fondue Team</strong></p>
+            </header><!-- /#banner -->
+
+            <nav id="menu">
+                <ul>
+                    
+            
+                
+            
+                </ul>
+            </nav><!-- /#menu -->
+
+            
+    <header>
+        <h1 class="entry-title"><a href="" rel="bookmark" title="Permalink to CSS Sprite Generator v4.0 available on Launchpad">CSS Sprite Generator v4.0 available on Launchpad</a></h1>
+    </header>
+    <div class="post-info">
+        <abbr class="published" title="2009-09-01T11:03:00">
+                Tue 01 September 2009
+        </abbr>
+        
+        <p class="vcard author">
+            By <a class="url fn" href="/author/Project Fondue Team">Project Fondue Team</a>
+        </p>
+        
+    </div><!-- /.post-info -->
+    <div class="entry-content">
+    <p>We've recently released the source code for version 4 of our CSS sprite generator.</p>
+<p>We've done a fair amount of restructuring, fixed a few bugs and added an important new feature - the ability to generate sprites with their component images stacked in horizontal or vertical orientation.</p>
+<p>This is useful for sprites which contain gradients that need to be repeated in a specific direction. There's also been some suggestion, particularly from the Yahoo! performance guys, that <a class="reference external" href="http://developer.yahoo.com/performance/rules.html#opt_sprites">building sprites horizontally results in a smaller overall image size</a>.</p>
+<blockquote>
+<p>Arranging the images in the sprite horizontally as opposed to vertically usually results in a smaller file size.</p>
+<p class="attribution">&mdash;Yahoo! Exceptional Performance Team</p>
+</blockquote>
+<div class="section" id="other-changes">
+<h2>Other Changes</h2>
+<div class="section" id="generated-css">
+<h3>Generated CSS</h3>
+<p>Displaying the generated CSS within a textarea field (rather than a scrolling div) to enable select all and easier copy and paste.</p>
+</div>
+<div class="section" id="component-spacing">
+<h3>Component Spacing</h3>
+<p>A reduction in the default spacing (horizontal and vertical) between component images in the sprite. This makes the tool kinder to our servers and means, with a default generation, the browser has to handle a smaller uncompressed image in memory. <a class="reference external" href="http://developer.yahoo.com/performance/rules.html#opt_sprites">This should be of particular benefit to the iphone which doesn't seem to handle large sprites too well.</a></p>
+<blockquote>
+<p>&quot;Be mobile-friendly&quot; and don't leave big gaps between the images in a sprite. This doesn't affect the file size as much but requires less memory for the user agent to decompress the image into a pixel map. 100x100 image is 10 thousand pixels, where 1000x1000 is 1 million pixels</p>
+<p class="attribution">&mdash;Yahoo! Exceptional Performance Team</p>
+</blockquote>
+<p>There's a balance to be had here, of course. The usual reason for including space between component images is to allow for text sizes increases which would otherwise result in partial display of the next image in the sprite. You can see how this would be a particular problem on something like the navigation of the <a class="reference external" href="http://www.yahoo.com/">Yahoo! home page</a>.</p>
+</div>
+<div class="section" id="language-selection">
+<h3>Language Selection</h3>
+<p>Conversion of the language selection interface from a drop down box to a list of links to make it easier for someone to switch to their native language, particularly where they don't understand the currently displayed language. There's an <a class="reference external" href="http://www.w3.org/International/questions/qa-navigation-select">interesting analysis of the use of drop downs versus links</a> in the W3C i18n FAQ with the relative benefits and pitfalls of each approach.</p>
+</div>
+</div>
+<div class="section" id="looking-forward">
+<h2>Looking Forward</h2>
+<p>We've got a few other bugs that need fixing. We'll be working on those shortly and, in due course, we'll also be developing a command line version of the tool. This should make it easy to incorporate into an automated build script. Check back regularly for further details and do drop us a line if you've got any suggestions.</p>
+</div>
+<div class="section" id="get-the-code">
+<h2>Get the Code</h2>
+<p>You can <a class="reference external" href="https://launchpad.net/css-sprite-generator">get the source code here on Launchpad</a>. As always comments, suggestions, bugs and patches are welcomed.</p>
+</div>
+<div class="section" id="try-version-4-online">
+<h2>Try Version 4 Online</h2>
+<p><a class="reference external" href="http://spritegen.website-performance.org/">CSS Sprite Generator version 4</a> is available online where you can dive right in and try out the latest features.</p>
+</div>
+
+    </div><!-- /.entry-content -->
+    <div id="disqus_thread"></div>
+
+        </section>
+
+        
+        <aside class="sidebar g-1/4 m-g-100">
+            <h3><span>Feed your head</span></h3>
+            <ul>
+                <li><a href="http://twitter.com/projectfondue">Follow us on Twitter</a></li>
+            </ul>
+
+            <h3><span>Latest Posts</span></h3>
+            <ul>
+                
+                <li><a href="/archives/2011/06/06/the-web-column-issue-no5">The Web Column: Issue No.5</a></li>
+                
+                <li><a href="/archives/2011/02/09/the-web-column-issue-no4">The Web Column: Issue No.4</a></li>
+                
+                <li><a href="/archives/2011/02/08/contribute-to-the-web-column">Contribute to the Web Column</a></li>
+                
+                <li><a href="/archives/2011/01/18/the-web-column-issue-no3">The Web Column: Issue No.3</a></li>
+                
+                <li><a href="/archives/2011/01/14/the-web-column-issue-no2">The Web Column: Issue No.2</a></li>
+                
+            </ul>
+
+            
+
+            <h3><span>Tags</span></h3>
+            <ul class="tags">
+                
+                    <li class="tag-10"><a href="/tag/performance/">performance</a></li>
+                
+                    <li class="tag-10"><a href="/tag/accessibility/">accessibility</a></li>
+                
+                    <li class="tag-10"><a href="/tag/cron/">cron</a></li>
+                
+                    <li class="tag-1"><a href="/tag/web-column/">web-column</a></li>
+                
+                    <li class="tag-10"><a href="/tag/browsers/">browsers</a></li>
+                
+                    <li class="tag-10"><a href="/tag/scaling/">scaling</a></li>
+                
+                    <li class="tag-10"><a href="/tag/linux/">linux</a></li>
+                
+                    <li class="tag-10"><a href="/tag/restructuredtext/">restructuredtext</a></li>
+                
+                    <li class="tag-10"><a href="/tag/haproxy/">haproxy</a></li>
+                
+                    <li class="tag-2"><a href="/tag/python/">python</a></li>
+                
+                    <li class="tag-10"><a href="/tag/glusterfs/">glusterfs</a></li>
+                
+                    <li class="tag-10"><a href="/tag/css/">css</a></li>
+                
+                    <li class="tag-3"><a href="/tag/apache/">apache</a></li>
+                
+                    <li class="tag-6"><a href="/tag/wsgi/">wsgi</a></li>
+                
+                    <li class="tag-6"><a href="/tag/mod_wsgi/">mod_wsgi</a></li>
+                
+                    <li class="tag-10"><a href="/tag/nginx/">nginx</a></li>
+                
+                    <li class="tag-10"><a href="/tag/google/">google</a></li>
+                
+                    <li class="tag-10"><a href="/tag/announcements/">announcements</a></li>
+                
+                    <li class="tag-10"><a href="/tag/loggerhead/">loggerhead</a></li>
+                
+                    <li class="tag-10"><a href="/tag/devops/">devops</a></li>
+                
+            </ul>
+
+            <h3><span>More Fondue</span></h3>
+            <ul>
+                <li><a href="http://spritegen.website-performance.org">CSS Sprite Generator</a></li>
+                <li><a href="http://favicon-generator.org">Favicon Generator</a></li>
+                <li><a href="http://permissions-calculator.org">Unix Permissions Calculator</a></li>
+            </ul>
+
+
+        </aside>
+        
+    </div>
+
+    <footer id="contentinfo" class="body" role="contentinfo">
+        <p class="powered">Proudly powered by <a href="http://docs.notmyidea.org/alexis/pelican/">pelican</a></p>
+        <p class="copyright">&copy; Copyright 2008-2012 by <a href="http://projectfondue.com/">Project Fondue</a>.</p>
+    </footer><!-- /#contentinfo -->
+
+    
+
+<script type="text/javascript">
+    var disqus_shortname = 'projectfondue';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+
+    <script src="/theme/js/lscache.js"></script>
+    <script src="/theme/js/latest-tweet.js"></script>
+</body>
+</html>
