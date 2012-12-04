@@ -4,6 +4,15 @@ body {
     color: #333;
     font-size: 14px;
 }
+a, a:link, a:visited {
+    text-decoration: none
+}
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+ul {
+    padding-left: 20px;
+}
 .banner {
     background: url(http://pf.staticfil.es/com/img/header-mountains.001.png) repeat-x 1px top;
     height: 170px;

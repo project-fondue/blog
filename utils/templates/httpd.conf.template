@@ -18,7 +18,6 @@ DocumentRoot %(content_path)s
 
     AddType text/javascript js
     AddType text/css css
-
 </Location>
 
 <IfModule mod_rewrite.c>

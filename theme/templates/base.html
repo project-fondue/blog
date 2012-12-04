@@ -22,6 +22,7 @@
                 <p><strong>{{ SITESUBTITLE }}</strong></p>
             </header><!-- /#banner -->
 
+            {% if MENUITEMS %}
             <nav id="menu">
                 <ul>
                     {% for title, link in MENUITEMS %}
@@ -29,15 +30,16 @@
                     {% endfor %}
             {% if DISPLAY_PAGES_ON_MENU %}
                 {% for p in PAGES %}
-                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITE_URL }}/pages/{{ p.url }}">{{ p.title }}</a></li>
+                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/pages/{{ p.url }}">{{ p.title }}</a></li>
                 {% endfor %}
             {% else %}
                 {% for cat, null in categories %}
-                    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITE_URL }}/category/{{ cat }}.html">{{ cat }}</a></li>
+                    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/category/{{ cat }}.html">{{ cat }}</a></li>
                 {% endfor %}
             {% endif %}
                 </ul>
             </nav><!-- /#menu -->
+            {% endif %}
 
             {% block content %}{% endblock %}
         </section>
@@ -52,7 +54,7 @@
             <h3><span>Latest Posts</span></h3>
             <ul>
                 {% for article in articles[:LATEST_POST_LIMIT] %}
-                <li><a href="{{ SITE_URL }}/{{ article.url }}">{{ article.title }}</a></li>
+                <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
                 {% endfor %}
             </ul>
 

@@ -32,8 +32,10 @@ window.pf = {
         scr.src = "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=projectfondue&callback=pf.tweetCallback&count=1";
         console.log(scr);
         scr.type = "text/javascript";
-        document.body.appendChild(scr);
+        document.getElementsByTagName("head")[0].appendChild(scr);
     }
 }
 pf.init();
-
+function cb(data) {
+    pf.handleData(data)
+}
