@@ -15,10 +15,38 @@ DocumentRoot %(content_path)s
      Options Indexes FollowSymLinks MultiViews
      Order allow,deny
      allow from all
+
+    AddType text/javascript js
+    AddType text/css css
+
 </Location>
 
 <IfModule mod_rewrite.c>
+    DirectorySlash Off
     RewriteEngine on
+
+    # Hide extension
+    #RewriteCond %%{REQUEST_FILENAME}\.html -f
+    #RewriteRule ^(.*)$ $1.html
+
     RewriteRule ^(.*).html$ $1 [L,R=301]
     RewriteRule ^(.+)/$ $1 [L]
+
+    RewriteRule /2011/6/06/the-web-column:-issue-no-5  http://blog.projectfondue.com/archives/2011/06/06/the-web-column-issue-no5 [R=301,L]
+    RewriteRule /2011/1/31/the-web-column:-issue-no-4  http://blog.projectfondue.com/archives/2011/02/09/the-web-column-issue-no4 [R=301,L]
+    RewriteRule /2011/2/8/contribute-to-the-web-column http://blog.projectfondue.com/archives/2011/02/08/contribute-to-the-web-column [R=301,L]
+    RewriteRule /2011/1/18/the-web-column:-issue-no-3 http://blog.projectfondue.com/archives/2011/01/18/the-web-column-issue-no3 [R=301,L]
+    RewriteRule /2010/12/20/the-web-column:-issue-no-2 http://blog.projectfondue.com/archives/2010/12/20/the-web-column-issue-no2 [R=301,L]
+    RewriteRule /2010/12/5/the-web-column-issue-1 http://blog.projectfondue.com/archives/2011/01/14/the-web-column-issue-no1 [R=301,L]
+    RewriteRule /2010/7/27/security-raw-roles-in-docutils http://blog.projectfondue.com/archives/2010/07/27/security-raw-roles-in-docutils  [R=301,L]
+    RewriteRule /2010/7/12/using-apache-in-a-python-development-environment http://blog.projectfondue.com/archives/2010/07/12/using-apache-in-a-python-development-environment [R=301,L]
+    RewriteRule /2010/2/11/building-static-asset-cluster http://blog.projectfondue.com/archives/2010/02/11/building-a-static-asset-cluster [R=301,L]
+    RewriteRule /2010/1/21/getting-an-early-warning-of-low-disk-space http://blog.projectfondue.com/archives/2010/01/21/getting-an-early-warning-of-low-disk-space [R=301,L]
+    RewriteRule /2009/11/26/loggerhead-and-mod-wsgi http://blog.projectfondue.com/archives/2009/11/26/loggerhead-and-mod_wsgi [R=301,L]
+    RewriteRule /2009/9/23/google-chrome-frame-good-or-bad-for-the-web http://blog.projectfondue.com/archives/2009/09/23/google-chrome-frame-good-or-bad-for-the-web [R=301,L]
+    RewriteRule /2009/8/25/apache-moving-from-prefork-to-worker http://blog.projectfondue.com/archives/2009/08/25/apache-moving-from-prefork-to-worker  [R=301,L]
+    RewriteRule /2009/8/5/version-4-of-source-code-for-css-sprite-generator-available-in-launchpad http://blog.projectfondue.com/archives/2009/08/05/css-sprite-generator-v40-available-on-launchpad [R=301,L]
+    RewriteRule /2009/6/28/raclette:-web-app-utils-for-python http://blog.projectfondue.com/archives/2009/06/28/raclette-web-app-utils-for-python [R=301,L]
+    RewriteRule /2009/6/27/welcome http://blog.projectfondue.com/archives/2009/06/27/welcome  [R=301,L]
+
 </IfModule>

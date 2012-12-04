@@ -1,6 +1,6 @@
 The Web Column: Issue No.2
 ##########################
-:date: 2011-01-14 09:15
+:date: 2010-12-20 09:15
 :tags: web-column
 :category: blog
 
@@ -139,7 +139,7 @@ Focus on: Python YQL
 
 Python-yql has recently become the newest Open Source project maintained by the Project Fondue Team so we'd thought it would be a good opportunity to highlight it.
 
-If you've not heard of YQL (Yahoo Query Language) (you've probably been living under a rock) it's a SQL-like way to query the internetz for data from a growing number of public APIs. The nice thing about YQL is that it takes a lot of the effort out of interfacing with other APIs. 
+If you've not heard of YQL (Yahoo Query Language) (you've probably been living under a rock) it's a SQL-like way to query the internetz for data from a growing number of public APIs. The nice thing about YQL is that it takes a lot of the effort out of interfacing with other APIs.
 
 Python-yql is a Python wrapper to YQL which looks to make using YQL from Python as easy as possible. Here's a quick example of what you can do:
 
@@ -148,15 +148,15 @@ Python-yql is a Python wrapper to YQL which looks to make using YQL from Python 
     >>> from yql import Public
     >>> y = Public()
     >>> res = y.execute("""USE 'http://www.datatables.org/
-    ukpostcode/ukpostcode.postcode.xml'; 
-                        select * from ukpostcode.postcode 
-                            where postcode='SW1A1AA' 
+    ukpostcode/ukpostcode.postcode.xml';
+                        select * from ukpostcode.postcode
+                            where postcode='SW1A1AA'
                                 and format = 'xml'""")
     >>> res.one()['geo']['lat']
     u'51.501007'
     >>> res.one()['geo']['lng']
     u'-0.141588'
-    >>> 
+    >>>
 
 
 * Python-yql documentation: http://python-yql.org

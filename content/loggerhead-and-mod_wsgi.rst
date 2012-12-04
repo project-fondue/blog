@@ -1,6 +1,6 @@
 Loggerhead and mod_wsgi
 #######################
-:date: 2009-11-27 09:14
+:date: 2009-11-26 09:14
 :tags: apache, loggerhead, mod_wsgi, python, wsgi
 :category: blog
 
@@ -14,7 +14,7 @@ Here's the wsgi file to set-up the application.
 
     BZR_SERVE_DIR = 'THE_DIR_CONTAINING_YOUR_BRANCHES_HERE'
 
-    import sys 
+    import sys
     import os
     sys.path.insert(0, os.path.dirname(__file__))
 
@@ -44,23 +44,23 @@ Next all you need is a basic apache config and a WSGIAlias directive pointing at
         ServerName loggerhead
 
         WSGIScriptAlias / /PATH_TO_LOGGERHEAD/loggerhead.wsgi
-    
+
         <Directory /PATH_TO_LOGGERHEAD>
             Order allow,deny
             Allow from all
         </Directory>
-    
+
     </VirtualHost>
 
 
-.. note:: 
+.. note::
 
     The following assumes you have a dns entry for whatever value you give ServerName - In my example I use loggerhead which I have set-up on my local machine to point to 127.0.0.1 so I have a local loggerhead running to view my checkouts.
 
 * Change the values of the paths and the ServerName as necessary
 * Save this file as loggerhead (or whatever you want to call it) in /etc/apache2/sites-available
 
-Then all you need to do is enable it with 
+Then all you need to do is enable it with
 
 .. sourcecode:: sh
 

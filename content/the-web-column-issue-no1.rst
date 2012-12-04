@@ -1,6 +1,6 @@
 The Web Column: Issue No.1
 ##########################
-:date: 2011-01-14 09:13
+:date: 2010-12-05 09:13
 :tags: web-column
 :category: blog
 
@@ -213,7 +213,7 @@ If you wanted to play with Mongrel2 and Python, you're all sorted now.
 Scrapemark
 ----------
 
-Scrapemark is a nice little module that lets you easily scrape web pages. 
+Scrapemark is a nice little module that lets you easily scrape web pages.
 
 - The site: http://arshaw.com/scrapemark/
 

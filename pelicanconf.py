@@ -47,8 +47,8 @@ PAGE_SAVE_AS = 'pages/{slug}.html'
 PAGE_LANG_URL = 'pages/{slug}-{lang}'
 PAGE_LANG_SAVE_AS = 'pages/{slug}-{lang}.html'
 
-PAGINATION_URL = '{name}/{page_num}'
-PAGINATION_SAVE_AS = '{name}/{page_num}.html'
+PAGINATION_URL = '{name}-{page_num}'
+PAGINATION_SAVE_AS = '{name}-{page_num}.html'
 
 AUTHOR_URL = 'author/{name}'
 AUTHOR_SAVE_AS = 'author/{name}.html'

@@ -1,6 +1,6 @@
 Welcome
 #######
-:date: 2009-07-12 10:44
+:date: 2009-06-27 10:44
 :category: blog
 :tags: announcements
 
@@ -12,4 +12,4 @@ The time in Paris gave us a time to finalise this blog and we've also planned ou
 
 We'll have plenty to talk about in the future; from the details on development of existing applications, as well as exciting things that are coming up. Most importantly for us is that this can be a two-way conversation and we look forward to hearing your thoughts, comments and suggestions on everything at Project Fondue.
 
-.. _CSS Sprite Generator: http://spritegen.website-performance.org/ 
+.. _CSS Sprite Generator: http://spritegen.website-performance.org/

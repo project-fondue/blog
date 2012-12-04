@@ -1,4 +1,7 @@
 {% extends "index.html" %}
+
+{% block main_heading %}<a class="title" href="{{ SITEURL }}">{{ SITENAME }}</a>{% endblock %}
+
 {% block content_title %}
 <h2>Articles in the {{ category }} category</h2>
 {% endblock %}

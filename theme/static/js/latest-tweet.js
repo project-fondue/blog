@@ -19,7 +19,6 @@ window.pf = {
             tweetNode.appendChild(p);
         }
     },
-    tweetSrc: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=projectfondue&callback=pf.tweetCallback&count=1",
     init: function(){
         var json = lscache.get(this.key);
         if (json) {
@@ -30,8 +29,10 @@ window.pf = {
     },
     makeScriptNode: function(){
         var scr = document.createElement("script");
-        scr.src = this.tweetSrc;
-        document.getElementsByTagName("head")[0].appendChild(scr);
+        scr.src = "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=projectfondue&callback=pf.tweetCallback&count=1";
+        console.log(scr);
+        scr.type = "text/javascript";
+        document.body.appendChild(scr);
     }
 }
 pf.init();

@@ -1,6 +1,6 @@
 Raclette: Web App Utils for Python
 ##################################
-:date: 2009-07-14 10:58
+:date: 2009-06-28 10:58
 :category: blog
 :tags: wsgi, python
 
@@ -8,7 +8,7 @@ Something I've been working on for a while is consolidating the set of utilities
 
 It quickly became clear that this was something that could have more of a life of it's own. We've been finding WSGI to be a great thing for web application development because having a clear specification means that building apps and middlewares are far likely to be uttilsed because it doesn't matter which Python framework you use, whether it's a lightweight framework, Django, Pylons.
 
-The goals for Raclette are to provide well tested middlewares and libraries that can be used to facilitate web development. We're also looking to keep the quality of code at a high standard as much as possible whilst balancing that with getting code out there so developers can try it out and provide feedback. 
+The goals for Raclette are to provide well tested middlewares and libraries that can be used to facilitate web development. We're also looking to keep the quality of code at a high standard as much as possible whilst balancing that with getting code out there so developers can try it out and provide feedback.
 
 raclette.gbs: Graded Browser Support Middleware
 ========================================================

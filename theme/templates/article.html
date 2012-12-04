@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block main_heading %}<a class="title" href="{{ SITEURL }}">{{ SITENAME }}</a>{% endblock %}
+
 {% block content %}
     <header>
         <h1 class="entry-title"><a href="{{ pagename }}" rel="bookmark" title="Permalink to {{ article.title}}">{{ article.title }}</a></h1>
@@ -10,7 +12,7 @@
         </abbr>
         {% if article.author %}
         <p class="vcard author">
-            By <a class="url fn" href="{{ SITE_URL }}/{{ article.author.url }}">{{ article.author }}</a>
+            By <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         </p>
         {% endif %}
     </div><!-- /.post-info -->

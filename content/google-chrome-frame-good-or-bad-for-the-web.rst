@@ -1,6 +1,6 @@
 Google Chrome Frame — good or bad for the web?
 ##############################################
-:date: 2009-10-02 20:35
+:date: 2009-09-23 20:35
 :category: blog
 :tags: accessibility, browsers, google
 
@@ -26,7 +26,7 @@ Is this also saying that Google Wave will need Chrome Frame because it will only
 Google Frame and Accessibility
 ==============================
 
-`Early investigations by Steve Faulkner <http://www.paciellogroup.com/blog/?p=444>`_ have shown that the inclusion of Google Frame locks out users of assisitive technologies completely. 
+`Early investigations by Steve Faulkner <http://www.paciellogroup.com/blog/?p=444>`_ have shown that the inclusion of Google Frame locks out users of assisitive technologies completely.
 
 Clearly this is an early release and assistive technology support could be improved in a future release. Whilst I'm happy to be proved wrong, I somehow doubt this will change given the epic technical challenges involved. That said, if anyone can do it, Google is a company that is best placed to make it happen.
 

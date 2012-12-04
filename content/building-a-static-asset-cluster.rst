@@ -1,6 +1,6 @@
 Building a Static Asset Cluster
 ###############################
-:date: 2010-03-04 23:22
+:date: 2010-02-11 23:22
 :category: blog
 :tags: glusterfs, haproxy, nginx, scaling
 
@@ -53,8 +53,8 @@ The second rewrite addition is to redirect subdomains to directories. This provi
 
 .. sourcecode:: nginx
 
-    if ($host ~ '(.*)\.staticfil.es' ) { 
-        set $subdomain $1; 
+    if ($host ~ '(.*)\.staticfil.es' ) {
+        set $subdomain $1;
         rewrite  "^/(.*)$"  /$subdomain/$1;
     }
 

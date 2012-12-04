@@ -1,6 +1,6 @@
 The Web Column: Issue No.4
 ##########################
-:date: 2011-02-09 09:23
+:date: 2011-01-31 09:23
 :tags: web-column
 :category: blog
 
@@ -35,14 +35,14 @@ History Hack Day
 YDN's Murray Rowan reports on the events at the recent `History Hack Day <http://developer.yahoo.com/blogs/ydn/posts/2011/01/history-hack-day-it-was-therefore-it-now-isnt/>`_. Sounds like it was a great success with many excellent hacks being produced over the course of the event.
 
     "Hack Days get people engaged with and excited about a subject, and our subject is history. There's a lot of it about, but lots of it is stuck, on paper, in old HTML pages, in archives, on hard-to-reach databases. We want people to figure out how to set some of that free, and start bringing that history to life as... whatever crazy things people can come up with."
-    
+
     -- `Matt Patterson, Organiser of the History Hackday <http://historyhackday.org/>`_
 
 
 Spread the Word on Facebook Scams and Phishing Techniques
 ---------------------------------------------------------
 
-`Graham Cluley's Naked Security blog <http://nakedsecurity.sophos.com/>`_ is a great resource for keeping abreast of the latest news relating to computer/web security. Recently a lot of the news has been related to scams on facebook. 
+`Graham Cluley's Naked Security blog <http://nakedsecurity.sophos.com/>`_ is a great resource for keeping abreast of the latest news relating to computer/web security. Recently a lot of the news has been related to scams on facebook.
 
 Now for those of us who work in the industry it might be more easy for us to spot a scam from a mile away. However if you have friends and family that frequent facebook and similar sites it could be worth getting them to take a look at Graham's blog to understand how theses ploys work and how they generate scammers money.
 
@@ -57,9 +57,9 @@ Everything related to client-side development.
 Deferreds in JQuery 1.5
 ------------------------
 
-`Using deferreds in Jquery <http://www.erichynds.com/jquery/using-deferreds-in-jquery/>`_ provides a nice walk through of how to use the new feature in JQuery 1.5. 
+`Using deferreds in Jquery <http://www.erichynds.com/jquery/using-deferreds-in-jquery/>`_ provides a nice walk through of how to use the new feature in JQuery 1.5.
 
-    "With deferreds, multiple callbacks can be bound to a task’s outcome, and any of these callbacks can be bound even after the task is complete. 
+    "With deferreds, multiple callbacks can be bound to a task’s outcome, and any of these callbacks can be bound even after the task is complete.
     The task in question may be asynchronous, but not necessarily."
 
     -- Eric Hynds

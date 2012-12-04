@@ -1,6 +1,6 @@
 Apache: Moving from prefork to worker
 #####################################
-:date: 2010-03-04 23:23
+:date: 2009-08-25 23:23
 :tags: apache
 :category: blog
 
@@ -16,7 +16,7 @@ So what are the differences between Apache MPM ("multi-processing module") types
 MPM Prefork doesn't use threads and instead spawns child processes to serve requests. MPM Worker on the other hand uses multi-threaded processes where each child process utilises a number of threads:
 
      By using threads to serve requests, it is able to serve a large number of requests with less system resources than a process-based server. Yet it retains much of the stability of a process-based server by keeping multiple processes available, each with many threads.
-     
+
      -- Apache 2 Documentation
 
 Something to bear in mind is that you probably won't want to switch to worker if you are using PHP unless you are ok with using PHP as FastCGI and even then the `PHP manual doesn't recommend using MPM worker. <http://www.php.net/manual/en/faq.installation.php#faq.installation.apache2>`_
